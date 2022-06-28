@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/calculadora.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="conteudo-principal">
+    <h1 class="titulo">Calculadora</h1>
+    <div id="container">
+      <header>
+        <div id="display"></div>
+      </header>
+      <ul class="botoes">
+        <li id="tecla1" onclick="insert('1')">1</li>
+        <li id="tecla2" onclick="insert('2')">2</li>
+        <li id="tecla3" onclick="insert('3')">3</li>
+        <li class="operador" onclick="insert('+')">+</li>
+        <li id="tecla4" onclick="insert('4')">4</li>
+        <li id="tecla5" onclick="insert('5')">5</li>
+        <li id="tecla6" onclick="insert('6')">6</li>
+        <li class="operador" onclick="insert('-')">-</li>
+        <li id="tecla7" onclick="insert('7')">7</li>
+        <li id="tecla8" onclick="insert('8')">8</li>
+        <li id="tecla9" onclick="insert('9')">9</li>
+        <li class="operador" onclick="insert('*')">*</li>
+        <li id="ponto" onclick="insert('.')">.</li>
+        <li id="tecla0" onclick="insert('0')">0</li>
+        <li onclick="clean()">c</li>
+        <li class="operador" onclick="insert('/')">/</li>
+        <li class="botao" onclick="back()">&leftarrow;</li>
+        <li class="verificar" onclick="calcular()">=</li>
+      </ul>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <footer>&copy;<strong>Desenvolvido por RodrigoRogue</strong></footer>
+</body>
+
+</html>
