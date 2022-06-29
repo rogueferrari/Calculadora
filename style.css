@@ -13,9 +13,8 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   position: relative;
-  margin-top: 70px;
-  margin-left: 42.2%;
-  display: inline-block;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .titulo::before {
@@ -24,10 +23,9 @@
   height: 4px;
   background-color: #eb47d5;
   position: absolute;
-  top: 35px;
-  left: 2px;
+  top: 30px;
   animation-name: brilho;
-  animation-duration: 2.2s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -97,4 +95,20 @@ footer {
   text-align: center;
   letter-spacing: 5px;
   color: rgba(223, 217, 217, 0.267);
+}
+
+@media (max-width: 340px) {
+  .conteudo-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+  }
+  .titulo {
+    font-size: 1.4rem;
+    grid-row: 1;
+  }
+
+  #container {
+    grid-row: 2;
+  }
 }
